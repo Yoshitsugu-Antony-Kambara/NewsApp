@@ -8,6 +8,13 @@
 import Foundation
 import RxSwift
 
-final class HomeActionCreator {
+final class HomeActionCreator: RxActionable {
+    let dispatcher: DispatchableDispatcher
+    let fetchAppSetting: AnyObserver<Void>()
+    private let disposeBag = DisposeBag()
+    
+    init(dispatcher: DispatchableDispatcher = .init(),
+         maintenanceRepository: )
+    
     
 }
